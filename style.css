@@ -1,0 +1,88 @@
+body {
+    font-family: Hco Gotham SSm, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-weight: 550;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0;
+    font-size: 30px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #8A1538;
+    gap: 15px;
+}
+li {
+    padding: 20px;
+    color:#e0e0e0;
+    justify-content: flex-start;
+}
+
+li a {
+    text-decoration: none;
+    color:#e0e0e0;
+
+}
+
+.nav-item{
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+}
+
+.current-link {
+    text-decoration: underline;
+    text-decoration-color: #e0e0e0;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+}
+
+.material-icon{
+    font-size: 100%;
+    color: #e0e0e0;
+    margin-right: 0%;
+}
+
+.start-icon {
+    font-size: 15px;
+    color: #e0e0e0;
+    margin-right: 10px;
+}
+
+.footer {
+    display:flex;
+    justify-content: end;
+    background-color: #00573F;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+}
+
+.footer .footer-text {
+    margin-left: auto;
+    margin-right: 2%;
+    text-align: right;
+    color: #cccccc;
+}
+
+/*
+UPMIN
+#7B1113 MAROON
+#014421 GREEN
+#FDCC0d
+
+UPLB
+#8A1538 LIGHT MAROON
+#00573F GREEN
+#FFB81C GOLD
+*/
