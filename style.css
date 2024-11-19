@@ -27,6 +27,10 @@ li a {
 
 }
 
+nav {
+    position: sticky;
+}
+
 .nav-item{
     display: inline-block;
     transition: 0.2s;
@@ -73,6 +77,29 @@ li a {
     margin-right: 2%;
     text-align: right;
     color: #cccccc;
+}
+
+.welcome-section{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+}
+
+.welcome{
+
+    padding:20px;
+
+    font-size: 50px;
+}
+
+.welcome-text{
+    font-size: 20px;
+    padding-left: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 /*
