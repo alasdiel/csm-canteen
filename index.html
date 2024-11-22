@@ -5,24 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Albinda, Baguio">
     <title>CSM Canteen</title>
-    <!--main stylesheet-->
-    <link rel = "stylesheet" type = "text/css" href = "style.css"/>
-    <!--google fonts material icons sheet-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+   
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
-    <nav> <!--navigation bar-->
+ 
+    <nav>
         <ul> 
             <li class="material-icon"><span class="material-symbols-outlined">restaurant</span></li>
             <li class="start-icon"><a href="index.html">Canteen<br>Sa Kanluran</a></li>
-            <li><a class="current-link nav-item", href="index.html">Home</a></li>
-            <li><a class="nav-item" href="menu.html">Food Menu</a></li> <!--not implemented-->
-            <li><a class="nav-item" href="essentials.html">Supplies and Essentials</a></li> <!--not implemented-->
-            <li><a class="nav-item" href="about.html">About</a></li> <!--not implemented-->
+            <li><a class="current-link nav-item" href="index.html">Home</a></li>
+            <li><a class="nav-item" href="menu.html">Food Menu</a></li>
+            <li><a class="nav-item" href="essentials.html">Supplies and Essentials</a></li>
+            <li><a class="nav-item" href="about.html">About</a></li>
         </ul>
     </nav>
 
-    <div class="footer"> <!--footer-->
-        <p class="footer-text">Website by:<br>Albinda, Alex Neal<br>Baguio, Ed Ian Jay<br>2024 | 1-BSCS</p>
+    
+    <header class="banner">
+        <h1>Welcome to CSM Canteen</h1>
+        <p>Your one-stop shop for food and essentials.</p>
+        <button onclick="alert('Explore our menu!')">Explore Now</button>
+    </header>
+
+
+    <section class="menu-slider">
+        <h2>Our Bestsellers</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="dish1.jpg" alt="Dish 1"><p>Adobo Rice Meal</p></div>
+                <div class="swiper-slide"><img src="dish2.jpg" alt="Dish 2"><p>Chicken BBQ</p></div>
+                <div class="swiper-slide"><img src="dish3.jpg" alt="Dish 3"><p>Halo-Halo</p></div>
+                <div class="swiper-slide"><img src="dish4.jpg" alt="Dish 4"><p>Beef Tapa</p></div>
+            </div>
+         
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <section class="search">
+        <input type="text" placeholder="Search for food or supplies...">
+        <button>Search</button>
+    </section>
+
+  
+    <footer>
+        <div class="footer-content">
+            <p>Website by:<br>Albinda, Alex Neal<br>Baguio, Ed Ian Jay<br>2024 | 1-BSCS</p>
+            <p>Contact us: <a href="mailto:info@csmcanteen.com">info@csmcanteen.com</a> | +63 912 345 6789</p>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: { delay: 3000 },
+            pagination: { el: '.swiper-pagination', clickable: true },
+        });
+    </script>
 </body>
 </html>
