@@ -5,18 +5,50 @@ body {
     padding: 0;
 }
 
-ul {
+nav{
     display:flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+background-color: #8A1538;
+gap:15px;
+}
+
+.logo-title {
+    display:flex;
+    flex-direction: row;
     margin: 0;
     font-size: 30px;
     list-style-type: none;
     overflow: hidden;
-    background-color: #8A1538;
     gap: 15px;
+    
 }
+
+.logo-title li {
+    padding: 20px 0px 20px 0px;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: 2%;
+
+    
+    
+}
+
+.nav-items li {
+        padding: 20px 0px 20px 0px;
+}
+
 li {
-    padding: 20px;
+
     color:#e0e0e0;
     justify-content: flex-start;
 }
@@ -37,7 +69,11 @@ nav {
 }
 
 .nav-item:hover {
-    transform: scale(1.1);
+    transform: scale(1.09);
+}
+
+about {
+    padding-right: 20px;
 }
 
 .current-link {
@@ -65,8 +101,7 @@ nav {
     background-color: #00573F;
     color: #e0e0e0;
     text-align: center;
-    padding: 5px;
-    position: fixed;
+    padding: 3 0 3 3;
     bottom: 0;
     width: 100%;
     font-size: 20px;
