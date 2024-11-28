@@ -7,14 +7,14 @@ body {
 
 nav{
     display:flex;
-    flex-direction: row;
+    flex-flow: row wrap;
 background-color: #8A1538;
 gap:15px;
 }
 
 .logo-title {
     display:flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     margin: 0;
     font-size: 30px;
     list-style-type: none;
