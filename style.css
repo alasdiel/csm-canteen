@@ -5,18 +5,60 @@ body {
     padding: 0;
 }
 
-ul {
+
+nav{
     display:flex;
-    flex-wrap: wrap;
-    margin: 0;
+    flex-flow: row wrap;
+background-color: #8A1538;
+    color: #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    overflow:hidden;
+}
+
+.logo-title {
+    display:flex;
+    flex-flow: row wrap;
+    margin-left: 0;
     font-size: 30px;
     list-style-type: none;
     overflow: hidden;
-    background-color: #8A1538;
     gap: 15px;
+    
 }
+
+.logo-title li {
+    padding: 20px 0px 20px 0px;
+}
+
+.start-icon li {
+    color: #e0e0e0;
+    margin-right: 10px;
+    
+}
+
+.start-icon li a {
+    text-shadow: 5px 5px #000;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    font-size: 22px;
+    gap: 15px;
+    margin-right: 5%;
+    margin-left: auto;
+}
+
 li {
-    padding: 20px;
+
     color:#e0e0e0;
     justify-content: flex-start;
 }
@@ -27,9 +69,31 @@ li a {
 
 }
 
-nav {
-    position: sticky;
+
+.nav-item {
+        padding: 20px 20px 20px 20px;
+        flex: 1 1 auto;
+        background-color: #e0e0e0;
+        color: #8A1538;
+        border: 3px solid #FFB81C;
+        box-shadow: 5px 5px #000;
+        border-radius: 20px;
+        max-width: 100%;
+        overflow:hidden;
 }
+
+li {
+
+    color:#e0e0e0;
+    justify-content: flex-start;
+}
+
+li a {
+    text-decoration: none;
+    color:#e0e0e0;
+
+}
+
 
 .nav-item{
     display: inline-block;
@@ -37,26 +101,26 @@ nav {
 }
 
 .nav-item:hover {
-    transform: scale(1.1);
+    transform: scale(1.09);
 }
+
 
 .current-link {
     text-decoration: underline;
     text-decoration-color: #e0e0e0;
     text-decoration-thickness: 3px;
     text-underline-offset: 6px;
+    border-color: #00573F;
 }
 
 .material-icon{
     font-size: 100%;
     color: #e0e0e0;
-    margin-right: 0%;
 }
 
 .start-icon {
     font-size: 15px;
     color: #e0e0e0;
-    margin-right: 10px;
 }
 
 .footer {
@@ -65,8 +129,7 @@ nav {
     background-color: #00573F;
     color: #e0e0e0;
     text-align: center;
-    padding: 5px;
-    position: fixed;
+    padding: 3 0 3 3;
     bottom: 0;
     width: 100%;
     font-size: 20px;
@@ -84,7 +147,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-flow: column wrap;
     gap:30px;
 }
 
