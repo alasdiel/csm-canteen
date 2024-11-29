@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="Albinda, Baguio">
+    <title>CSM Canteen</title>
+   
+    <link rel="stylesheet" type="text/css" href="cc.css">
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+ 
+    <nav>
+        <ul> 
+            <li class="material-icon"><span class="material-symbols-outlined">restaurant</span></li>
+            <li class="start-icon"><a href="index.html">Canteen<br>Sa Kanluran</a></li>
+            <li><a class="current-link nav-item" href="index.html">Home</a></li>
+            <li><a class="nav-item" href="menu.html">Food Menu</a></li>
+            <li><a class="nav-item" href="essentials.html">Supplies and Essentials</a></li>
+            <li><a class="nav-item" href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    
+    <header class="banner">
+        <h1>Welcome to CSM Canteen</h1>
+        <p>Your one-stop shop for food and essentials.</p>
+        <button onclick="alert('Explore our menu!')">Explore Now</button>
+    </header>
+
+<section class="menu-slider">
+    <h2>Monday Menu</h2>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="BangusKalahati.jpg" alt="Dish 1">
+                <p>Bangus Kalahati</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="beefhalanghalang.jpg" alt="Dish 2">
+                <p>Beef Halang-halang</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="KALDERITA.jpg" alt="Dish 3">
+                <p>Calderita</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="pancit.jpg" alt="Dish 4">
+                <p>Pancit</p>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<section class="menu-slider">
+    <h2>Available on Tuesday until Friday</h2>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="BangusKalahati.jpg" alt="Dish 1">
+                <p>Bangus Kalahati</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="beefhalanghalang.jpg" alt="Dish 2">
+                <p>Beef Halang-halang</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="KALDERITA.jpg" alt="Dish 3">
+                <p>Calderita</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="pancit.jpg" alt="Dish 4">
+                <p>Pancit</p>
+            </div>
+        </div>
+
+        <!-- Pagination for navigation dots -->
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>Website by:<br>Albinda, Alex Neal<br>Baguio, Ed Ian Jay<br>2024 | 1-BSCS</p>
+        <p>Contact us: <a href="mailto:info@csmcanteen.com">info@csmcanteen.com</a> | +63 912 345 6789</p>
+    </div>
+</footer>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: { delay: 3000 },
+        pagination: { el: '.swiper-pagination', clickable: true },
+    });
+</script>
+</body>
+</html>
