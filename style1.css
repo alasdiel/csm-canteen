@@ -9,13 +9,12 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(157, 142, 142, 0.5); */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -55,15 +54,17 @@ body {
 }
 
 .content h1 {
-    font-size: 4rem;
+    font-size: 10rem;
     margin-bottom: 20px;
-    font-family: Bebas Neue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .content h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 15px;
     font-family: Playfair Display;
+    color: #f8e5e5;
+    /* background-color: #570808; */
 }
 .content p {
     font-style: italic;
