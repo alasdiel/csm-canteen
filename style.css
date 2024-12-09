@@ -262,3 +262,9 @@ html, body {
         text-shadow: 0 0 20px #fff, 0 0 30px rgba(73, 148, 7, 0.8), 0 0 40px #890b0b;
     }
 }
+
+.material-icon{
+    font-size: 100%;
+    color: #e0e0e0;
+}
+
