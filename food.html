@@ -4,36 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Menu - CSM Canteen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
-    <div class="banner">
-        <!-- <div class="navbar">
-        <ul>
-            <li><a href="home.html">HOME</a></li>
-            <li><a href="place2.html" class="active">FOOD</a></li>
-            <li><a href="place3.html">SUPPLIES</a></li>
-        </ul>
-        </div> -->
-        <div class="navbar">
-            <a href="UPMin.png"><img src="UPMin.png" class="logo" alt="Logo"></a>
-            <!-- <ul>
-                <li><a href="home.html">HOME</a></li>
-                <li><a href="place2.html" class="active">FOOD</a></li>
-                <li><a href="place3.html">SUPPLIES</a></li>
-            </ul> -->
-        </div>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="place2.html" class="active">Food</a></li>
+                <li><a href="place3.html">Supplies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
         <div class="content">
+            <a href="home.html" class="logo"><img src="UPMin.png" alt="Logo"></a>
             <h1>FOOD MENU</h1>
             <p>Browse our weekly menu options with a modern look!</p>
         </div>
-    </div>
+        <button onclick="goBack()" class="button">Go Back</button>
+    </section>
 
     <section class="menu-slideshow">
         <h2>Served only on Mondays</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
+                <!-- Image slides with menu items -->
                 <div class="swiper-slide">
                     <img src="bangus.webp" alt="Bangus Kalahati">
                     <p>Bangus Kalahati</p>
@@ -42,130 +41,43 @@
                     <img src="beef-halang.png" alt="Beef Halang-halang">
                     <p>Beef Halang-halang</p>
                 </div>
-                <div class="swiper-slide">
-                    <img src="kalderita.png" alt="Kalderita">
-                    <p>Kalderita</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="pancit.jpg" alt="Bangus Kalahati">
-                    <p>Pancit</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="tangkong.jpg" alt="Beef Halang-halang">
-                    <p>Tangkong</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="okra.jpg" alt="Kalderita">
-                    <p>Okra Salad</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="torta.jpg" alt="Bangus Kalahati">
-                    <p>Talong Torta</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="sinuglaw.jpg" alt="Beef Halang-halang">
-                    <p>Sinuglaw</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="PorkAdobo.jpg" alt="Kalderita">
-                    <p>Pork Adobo</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="ccurry.jpg" alt="Bangus Kalahati">
-                    <p>Chicken Curry</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="shanghai.jpg" alt="Beef Halang-halang">
-                    <p>Chicken Lumpia Shanghai</p>
-                </div>
+                <!-- Add more slides as needed -->
             </div>
             <div class="swiper-pagination"></div>
         </div>
     </section>
 
-    <div class="banner1">
-        <div class="content">
-            <h1>FOOD MENU</h1>
-            <p>Browse our weekly menu options with a modern look!</p>
-        </div>
-    </div>
-
     <section class="menu-slideshow">
-        <h2>Served only on Tuesdays until Fridays</h2>
+        <h2>Served only from Tuesdays to Fridays</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="PorkSinigang.jpg" alt="Chicken Adobo">
+                    <img src="PorkSinigang.jpg" alt="Pork Sinigang">
                     <p>Pork Sinigang</p>
                 </div>
                 <div class="swiper-slide">
-                    <img src="PorkChop.jpg" alt="Sinuglaw">
+                    <img src="PorkChop.jpg" alt="Pork Chop">
                     <p>Pork Chop</p>
                 </div>
-                <div class="swiper-slide">
-                    <img src="Spaghetti.jpg" alt="Sinigang na Baboy">
-                    <p>Spaghetti</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="Palabok.jpg" alt="Chicken Adobo">
-                    <p>Palabok</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="FriedChicken.jpg" alt="Sinuglaw">
-                    <p>Fried Chicken</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="Monggo.jpg" alt="Sinigang na Baboy">
-                    <p>Monggo</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="Pakbet.jpg" alt="Chicken Adobo">
-                    <p>Pakbet</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="Chilicon.jpg" alt="Sinuglaw">
-                    <p>Chillicon Karne (Beef)</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="ChickenPastil.jpg" alt="Sinigang na Baboy">
-                    <p>Chicken Pastil</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="Tequadillo.jpg" alt="Sinigang na Baboy">
-                    <p>Tequadillo (Giling Pork)</p>
-                </div>
+                <!-- Add more slides as needed -->
             </div>
             <div class="swiper-pagination"></div>
         </div>
     </section>
-
-    <div class="banner1">
-        <div class="content">
-            <h1>FOOD MENU</h1>
-            <p>Browse our weekly menu options with a modern look!</p>
-        </div>
-    </div>
 
     <section class="menu-slideshow">
         <h2>Served on Mondays until Fridays</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="Friedhotdog.jpg" alt="Fried Chicken">
+                    <img src="Friedhotdog.jpg" alt="Fried Hotdog">
                     <p>Fried Hotdog</p>
                 </div>
                 <div class="swiper-slide">
-                    <img src="Egg.jpg" alt="Hamburger">
+                    <img src="Egg.jpg" alt="Egg">
                     <p>Egg</p>
                 </div>
-                <div class="swiper-slide">
-                    <img src="Luncheon Meat.jpg" alt="Lumpiang Shanghai">
-                    <p>Luncheon Meat</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="ChiceknMami.jpg" alt="Hamburger">
-                    <p>Chicken Mami</p>
-                </div>
+                <!-- Add more slides as needed -->
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -176,22 +88,14 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="IceCream.jpg" alt="Fried Chicken">
+                    <img src="IceCream.jpg" alt="Ice Cream">
                     <p>Ice Cream</p>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
     </section>
-    
-    <div class="banner2">
-        <div class="content">
-            <h1>Asdang Kanluran</h1>
-            <button type="button" onclick="navigateToPage()"><span></span>HOME</button>
-            <p></p>
-        </div>
-    </div>
-
+   
     <footer>
         <div class="footer-content">
             <p>Follow us on:</p>
@@ -212,7 +116,11 @@
             autoplay: { delay: 3000 },
             pagination: { el: '.swiper-pagination', clickable: true },
         });
+        function goBack() {
+        window.history.back("index.html");
+    }   
+        // window.location.href = 'index.html';
+
     </script>
-    <script src="index.js"></script>
 </body>
 </html>

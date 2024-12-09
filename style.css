@@ -1,0 +1,264 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    background: linear-gradient(rgba(185, 3, 3, 0.5), rgba(73, 148, 7, 0.5)), url('side.jpg') no-repeat center center/cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo h2 {
+    font-size: 1.8em;
+    margin-left: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #890b0b;
+}
+
+/* Home */
+#home {
+    background-image: url('background.jpg');
+    background-size: cover;
+    height: 100vh;
+    color: #120101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#home button {
+    padding: 10px 20px;
+    background-color: #890b0b;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#home button:hover {
+    background-color: #890b0b;
+}
+
+/* About */
+#about {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#about .card {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    background-color: #890b0b;
+    color: white;
+    border-radius: 8px;
+    width: 200px;
+}
+
+#about .card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+/* Menu */
+#menu {
+    padding: 50px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#menu h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+#menu .menu-item {
+    display: inline-block;
+    margin: 15px;
+    padding: 20px;
+    background-color: white;
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#menu .menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#menu .menu-item h4 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+#menu .menu-item p {
+    font-size: 1.2em;
+}
+
+/* Contact */
+#contact {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact input, #contact textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #890b0b;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #890b0b;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Scroll */
+html, body {
+    scroll-behavior: smooth;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    position: relative;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content input, .modal-content button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.modal-content .close:hover,
+.modal-content .close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Scroll Animations */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+}
+#glow{
+    font-size: 4rem;
+    color: white;
+    animation: glowEffect 2s infinite alternate;
+}
+@keyframes glowEffect {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px rgba(185, 3, 3, 0.8), 0 0 30px #890b0b;
+    }
+    100% {
+        text-shadow: 0 0 20px #fff, 0 0 30px rgba(73, 148, 7, 0.8), 0 0 40px #890b0b;
+    }
+}
