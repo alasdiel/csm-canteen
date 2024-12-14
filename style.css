@@ -115,7 +115,7 @@ nav ul li a:hover {
 }
 
 .b1:hover {
-    transform: scale(3.0); /* Slightly enlarge the card */
+    transform: scale(2.0); /* Slightly enlarge the card */
     z-index: 10;
 }
 
