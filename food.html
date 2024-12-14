@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSM Canteen - Food Menu</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="place2.html" class="active">Food</a></li>
+                <li><a onclick="goToPage()">Home</a></li>
+                <li><a href="#menu-slideshow" class="active">Food</a></li>
                 <li><a href="place3.html">Supplies</a></li>
             </ul>
         </nav>
@@ -24,21 +24,21 @@
             <a class="logo"><img src="UPMin.png" alt="Logo"></a>
             <h1>Welcome to the CSM Canteen</h1>
             <p>Explore our weekly menu, designed to satisfy your cravings!</p>
+            <button onclick="goToMainPage()" class="button">Go Back</button>
         </div>
-        <button onclick="goToMainPage()" class="button">Go Back</button>
     </section>
 
-    <section class="menu-slideshow">
-        <h2>Monday Specials</h2>
+    <section id="menu-slideshow">
+        <h2 class="fade-in">Monday Specials</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="bangus.webp" alt="Bangus Kalahati">
+                    <img src="bangus.webp" alt="Bangus Kalahati" class="slide-in">
                     <h4>Bangus Kalahati</h4>
                     <p>Price: ₱75</p>
                 </div>
                 <div class="swiper-slide">
-                    <img src="beef-halang.png" alt="Beef Halang-halang">
+                    <img src="beef-halang.png" alt="Beef Halang-halang" class="slide-in">
                     <h4>Beef Halang-halang</h4>
                     <p>Price: ₱90</p>
                 </div>
@@ -48,16 +48,16 @@
     </section>
 
     <section class="menu-slideshow">
-        <h2>Tuesday to Friday</h2>
+        <h2 class="fade-in">Tuesday to Friday</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="PorkSinigang.jpg" alt="Pork Sinigang">
+                    <img src="PorkSinigang.jpg" alt="Pork Sinigang" class="slide-in">
                     <h4>Pork Sinigang</h4>
                     <p>Price: ₱85</p>
                 </div>
                 <div class="swiper-slide">
-                    <img src="PorkChop.jpg" alt="Pork Chop">
+                    <img src="PorkChop.jpg" alt="Pork Chop" class="slide-in">
                     <h4>Pork Chop</h4>
                     <p>Price: ₱70</p>
                 </div>
@@ -67,16 +67,16 @@
     </section>
 
     <section class="menu-slideshow">
-        <h2>Everyday Favorites</h2>
+        <h2 class="fade-in">Everyday Favorites</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="Friedhotdog.jpg" alt="Fried Hotdog">
+                    <img src="Friedhotdog.jpg" alt="Fried Hotdog" class="slide-in">
                     <h4>Fried Hotdog</h4>
                     <p>Price: ₱25</p>
                 </div>
                 <div class="swiper-slide">
-                    <img src="Egg.jpg" alt="Egg">
+                    <img src="Egg.jpg" alt="Egg" class="slide-in">
                     <h4>Egg</h4>
                     <p>Price: ₱15</p>
                 </div>
@@ -86,11 +86,11 @@
     </section>
 
     <section class="menu-slideshow">
-        <h2>Desserts</h2>
+        <h2 class="fade-in">Desserts</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="IceCream.jpg" alt="Ice Cream">
+                    <img src="IceCream.jpg" alt="Ice Cream" class="slide-in">
                     <h4>Ice Cream</h4>
                     <p>Price: ₱50</p>
                 </div>
@@ -100,7 +100,7 @@
     </section>
 
     <footer>
-        <div class="footer-content">
+        <div class="footer-content fade-in">
             <p>Follow us on:</p>
             <div class="social-icons">
                 <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
@@ -113,20 +113,20 @@
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script>
-            const swiper = new Swiper('.swiper-container', {
-                loop: true,
-                autoplay: { delay: 3000 },
-                pagination: { el: '.swiper-pagination', clickable: true },
-            });
-            function goBack() {
-            window.history.back("index.html");
-        }   
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: { delay: 3000 },
+            pagination: { el: '.swiper-pagination', clickable: true },
+        });
 
         function goToMainPage() {
-    window.location.href = 'index.html'; // Replace 'index.html' with the correct file path to your main webpage.
-}
+            window.location.href = 'index.html';
+        }
 
+        function goToPage() {
+            window.location.href = "index.html";
+        }
     </script>
 </body>
 </html>
