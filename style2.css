@@ -1,4 +1,4 @@
-/* Fonts and Reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -15,10 +15,9 @@ body {
 /* Navbar */
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
     padding: 15px 50px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -35,84 +34,50 @@ body {
 
 .navbar ul li a {
     text-decoration: none;
-    color: #fcf9f9;
-    text-transform: uppercase;
+    color: #fff;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .navbar ul li a:hover {
-    color: #6b0202;
+    color: #890b0b;
 }
 
 /* Banner */
 .banner {
     height: 100vh;
-    background: linear-gradient(rgba(185, 3, 3, 0.6), rgba(73, 148, 7, 0.6)), url('side.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(185, 3, 3, 0.6), rgba(73, 148, 7, 0.6)), url('banner.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     text-align: center;
     color: #fff;
-    padding: 20px;
 }
 
-.banner1 {
-    height: 100vh;
-    background: linear-gradient(rgba(73, 148, 7, 0.6), rgba(185, 3, 3, 0.6));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    padding: 20px;
+.banner h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
 }
 
-.banner2 {
-    height: 100vh;
-    background: linear-gradient(rgba(73, 148, 7, 0.6), rgba(185, 3, 3, 0.6)), url('front.jpg') no-repeat center center/cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    padding: 20px;
-}
-
-/* .bannerr
-{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(bg.png);
-    background-size: cover;
-    background-position: center;
-}
-.navbarr
-{
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
-
-.content h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.content p {
+.banner p {
     font-size: 1.2rem;
-    font-weight: 600;
-    font-style: italic;
-    margin-top: 10px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #890b0b;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #b90303;
+    transform: translateY(-5px);
 }
 
 /* Slideshow */
@@ -120,29 +85,22 @@ body {
     margin: 30px 10%;
     padding: 20px;
     background: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .menu-slideshow h2 {
     text-align: center;
-    margin-bottom: 15px;
     font-size: 2rem;
-    color: #333;
-}
-
-.swiper-container {
-    width: 100%;
-    padding: 20px 0;
+    margin-bottom: 15px;
+    color: #890b0b;
 }
 
 .swiper-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
-    padding: 10px;
 }
 
 .swiper-slide img {
@@ -153,9 +111,14 @@ body {
     margin-bottom: 10px;
 }
 
+.swiper-slide h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
 .swiper-slide p {
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.2rem;
     color: #555;
 }
 
@@ -165,53 +128,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    margin-top: 30px;
 }
 
-footer .social-icons img {
-    width: 30px;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-footer .social-icons img:hover {
-    transform: scale(1.1);
-}
-
-footer p {
-    font-size: 0.9rem;
-    margin-top: 10px;
-}
-button {
-    margin: 10px;
-    padding: 15px 30px;
-    background: transparent;
-    color: white;
-    border: 2px solid #890b0b;
-    border-radius: 25px;
-    position: relative;
-    overflow: hidden;
-    font-size: 16px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-button:hover {
-    transform: translateY(-5px);
-}
-
-button span {
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    top: 0;
-    left: 0;
-    background: #890b0b;
-    z-index: -1;
-    transition: width 0.5s;
-}
-
-button:hover span {
-    width: 100%;
-}
+<button onclick="goBack()" class="button">Go Back</button>

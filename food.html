@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Menu - CSM Canteen</title>
+    <title>CSM Canteen - Food Menu</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -22,62 +22,64 @@
     <section class="banner">
         <div class="content">
             <a class="logo"><img src="UPMin.png" alt="Logo"></a>
-            <h1>FOOD MENU</h1>
-            <p>Browse our weekly menu options with a modern look!</p>
+            <h1>Welcome to the CSM Canteen</h1>
+            <p>Explore our weekly menu, designed to satisfy your cravings!</p>
         </div>
-        <button onclick="goBack()" class="button">Go Back</button>
+        <button onclick="goToMainPage()" class="button">Go Back</button>
     </section>
 
     <section class="menu-slideshow">
-        <h2>Served only on Mondays</h2>
+        <h2>Monday Specials</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <!-- Image slides with menu items -->
                 <div class="swiper-slide">
                     <img src="bangus.webp" alt="Bangus Kalahati">
-                    <p>Bangus Kalahati</p>
+                    <h4>Bangus Kalahati</h4>
+                    <p>Price: ₱75</p>
                 </div>
                 <div class="swiper-slide">
                     <img src="beef-halang.png" alt="Beef Halang-halang">
-                    <p>Beef Halang-halang</p>
+                    <h4>Beef Halang-halang</h4>
+                    <p>Price: ₱90</p>
                 </div>
-                <!-- Add more slides as needed -->
             </div>
             <div class="swiper-pagination"></div>
         </div>
     </section>
 
     <section class="menu-slideshow">
-        <h2>Served only from Tuesdays to Fridays</h2>
+        <h2>Tuesday to Friday</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="PorkSinigang.jpg" alt="Pork Sinigang">
-                    <p>Pork Sinigang</p>
+                    <h4>Pork Sinigang</h4>
+                    <p>Price: ₱85</p>
                 </div>
                 <div class="swiper-slide">
                     <img src="PorkChop.jpg" alt="Pork Chop">
-                    <p>Pork Chop</p>
+                    <h4>Pork Chop</h4>
+                    <p>Price: ₱70</p>
                 </div>
-                <!-- Add more slides as needed -->
             </div>
             <div class="swiper-pagination"></div>
         </div>
     </section>
 
     <section class="menu-slideshow">
-        <h2>Served on Mondays until Fridays</h2>
+        <h2>Everyday Favorites</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="Friedhotdog.jpg" alt="Fried Hotdog">
-                    <p>Fried Hotdog</p>
+                    <h4>Fried Hotdog</h4>
+                    <p>Price: ₱25</p>
                 </div>
                 <div class="swiper-slide">
                     <img src="Egg.jpg" alt="Egg">
-                    <p>Egg</p>
+                    <h4>Egg</h4>
+                    <p>Price: ₱15</p>
                 </div>
-                <!-- Add more slides as needed -->
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -89,13 +91,14 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="IceCream.jpg" alt="Ice Cream">
-                    <p>Ice Cream</p>
+                    <h4>Ice Cream</h4>
+                    <p>Price: ₱50</p>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
     </section>
-   
+
     <footer>
         <div class="footer-content">
             <p>Follow us on:</p>
@@ -104,22 +107,25 @@
                 <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
                 <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
             </div>
-            <h3>College of Science and Mathematics, UP Mindanao, Davao City</h3>
+            <h3>College of Science and Mathematics, UP Mindanao</h3>
             <p>&copy; 2024 CSM Canteen. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper-container', {
-            loop: true,
-            autoplay: { delay: 3000 },
-            pagination: { el: '.swiper-pagination', clickable: true },
-        });
-        function goBack() {
-        window.history.back("index.html");
-    }   
-        // window.location.href = 'index.html';
+        <script>
+            const swiper = new Swiper('.swiper-container', {
+                loop: true,
+                autoplay: { delay: 3000 },
+                pagination: { el: '.swiper-pagination', clickable: true },
+            });
+            function goBack() {
+            window.history.back("index.html");
+        }   
+
+        function goToMainPage() {
+    window.location.href = 'index.html'; // Replace 'index.html' with the correct file path to your main webpage.
+}
 
     </script>
 </body>
