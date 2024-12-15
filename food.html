@@ -3,124 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Menu - CSM Canteen</title>
+    <title>Canteen sa Kanluran Food Menu</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=restaurant" />
+    <script>
+        function toggleMenu() {
+            const navUl = document.querySelector('nav .menu-items');
+            navUl.classList.toggle('show');
+        }
+    </script>
 </head>
 <body>
+    <div class="progress-bar" id="progress-bar"></div>
+
     <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="place2.html" class="active">Food</a></li>
-                <li><a href="place3.html">Supplies</a></li>
+        <nav>
+            <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+            <div class="logo">
+                <ul class="logo-title">
+                    <li class="material-icon"><span class="material-symbols-outlined" style="font-size: 50px;">restaurant</span></li>
+                    <li><a href="index.html">Canteen<br>sa Kanluran</a></li>
+                    <br>
+                    <li></li>
+                    <li><p>College of Science and Mathematics</p><p><strong>UP Mindanao</strong></p></li>           
+                    <li></li>  
+            </div>
+                </ul> 
+                
+            <ul class="menu-items">
+                <li><a href="#Mon">Monday Specials</a></li>
+                <li><a href="#TtoF">Tues. to Fri.</a></li>
+                <li><a href="#everyday">Everyday Favorites</a></li>
+                <li><a href="#dessert">Desserts</a></li>
+                <li><a href="#supplies">School Supplies</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="banner">
         <div class="content">
-            <a href="home.html" class="logo"><img src="UPMin.png" alt="Logo"></a>
-            <h1>FOOD MENU</h1>
-            <p>Browse our weekly menu options with a modern look!</p>
+            <a class="logo"><img src="./images/UPMin.png" alt="Logo"></a>
+            <h1>Welcome to the CSM Canteen</h1>
+            <p>Explore our weekly menu, designed to satisfy your cravings!</p>
+            <button onclick="goToPage()" class="button">Go Back</button>
         </div>
-        <button onclick="goBack()" class="button">Go Back</button>
     </section>
 
-    <section class="menu-slideshow">
-        <h2>Served only on Mondays</h2>
+    <section id="menu-slideshow" id="Mon">
+        <h2 class="fade-in sparkle">Monday Specials</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <!-- Image slides with menu items -->
                 <div class="swiper-slide">
-                    <img src="bangus.webp" alt="Bangus Kalahati">
-                    <p>Bangus Kalahati</p>
+                    <img src="./images/banguskalahati.png" alt="Bangus Kalahati" class="slide-in">
+                    <h4>Bangus Kalahati</h4>
+                    <p>Price: ₱75</p>
                 </div>
                 <div class="swiper-slide">
-                    <img src="beef-halang.png" alt="Beef Halang-halang">
-                    <p>Beef Halang-halang</p>
+                    <img src="./images/beef-halanghalang.png" alt="Beef Halang-halang" class="slide-in">
+                    <h4>Beef Halang-halang</h4>
+                    <p>Price: ₱90</p>
+                </div>  
+                <div class="swiper-slide">
+                    <img src="./images/beefcalderita.png" alt="Beef Calderita" class="slide-in">
+                    <h4>Beef Calderita</h4>
+                    <p>Price: ₱75</p>
                 </div>
-                <!-- Add more slides as needed -->
+                <div class="swiper-slide">
+                    <img src="./images/pancit.png" alt="Pancit" class="slide-in">
+                    <h4>Pancit</h4>
+                    <p>Price: ₱90</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/adobongtangkong.png" alt="Adobong Tangkong" class="slide-in">
+                    <h4>Adobong Tangkong</h4>
+                    <p>Price: ₱75</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/okrasalad.png" alt="Okra Salad" class="slide-in">
+                    <h4>Okra Salad</h4>
+                    <p>Price: ₱90</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/tortangtalong.png" alt="Tortang Talong" class="slide-in">
+                    <h4>Tortang Talong</h4>
+                    <p>Price: ₱75</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/sinuglaw.png" alt="Sinuglaw" class="slide-in">
+                    <h4>Sinuglaw</h4>
+                    <p>Price: ₱90</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/porkadobo.png" alt="Pork Adobo" class="slide-in">
+                    <h4>Pork Adobo</h4>
+                    <p>Price: ₱75</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/chickencury.png" alt="Chicken Curry" class="slide-in">
+                    <h4>Chicken Curry</h4>
+                    <p>Price: ₱90</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/lumpiangshanghai.png" alt="Lumpiang Shanghai" class="slide-in">
+                    <h4>Lumpiang Shanghai</h4>
+                    <p>Price: ₱90</p>
+                </div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
     </section>
 
-    <section class="menu-slideshow">
-        <h2>Served only from Tuesdays to Fridays</h2>
+    <section class="menu-slideshow" id="TtoF">
+        <h2 class="fade-in sparkle">Tuesday to Friday</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="PorkSinigang.jpg" alt="Pork Sinigang">
-                    <p>Pork Sinigang</p>
+                    <img src="./images/PorkSinigang.png" alt="Pork Sinigang" class="slide-in">
+                    <h4>Pork Sinigang</h4>
+                    <p>Price: ₱85</p>
                 </div>
                 <div class="swiper-slide">
-                    <img src="PorkChop.jpg" alt="Pork Chop">
-                    <p>Pork Chop</p>
+                    <img src="./images/PorkChop.png" alt="Pork Chop" class="slide-in">
+                    <h4>Pork Chop</h4>
+                    <p>Price: ₱70</p>
                 </div>
-                <!-- Add more slides as needed -->
+                <div class="swiper-slide">
+                    <img src="./images/palabok.png" alt="Palabok" class="slide-in">
+                    <h4>Palabok</h4>
+                    <p>Price: ₱70</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/friedchicken.png" alt="Fried Chicken" class="slide-in">
+                    <h4>Fried Chicken</h4>
+                    <p>Price: ₱85</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/ginataangmonggo.png" alt="Ginataang Monggo" class="slide-in">
+                    <h4>Ginataang Monggo</h4>
+                    <p>Price: ₱70</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/pinakbet.png" alt="Pinakbet" class="slide-in">
+                    <h4>Pinakbet</h4>
+                    <p>Price: ₱85</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/chilliconkarne.png" alt="Chillicon Karne (Beef)" class="slide-in">
+                    <h4>Chilli con Karne (Beef)</h4>
+                    <p>Price: ₱70</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/chickenpastil.png" alt="Chicken Pastil" class="slide-in">
+                    <h4>Chicken Pastil</h4>
+                    <p>Price: ₱85</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/tequadillo.png" alt="Tequadillo" class="slide-in">
+                    <h4>Tequadillo</h4>
+                    <p>Price: ₱70</p>
+                </div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
     </section>
 
-    <section class="menu-slideshow">
-        <h2>Served on Mondays until Fridays</h2>
+    <section class="menu-slideshow" id="everyday">
+        <h2 class="fade-in sparkle">Everyday Favorites</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="Friedhotdog.jpg" alt="Fried Hotdog">
-                    <p>Fried Hotdog</p>
+                    <img src="./images/Friedhotdog.png" alt="Fried Hotdog" class="slide-in">
+                    <h4>Fried Hotdog</h4>
+                    <p>Price: ₱25</p>
                 </div>
                 <div class="swiper-slide">
-                    <img src="Egg.jpg" alt="Egg">
-                    <p>Egg</p>
+                    <img src="./images/Egg.png" alt="Egg" class="slide-in">
+                    <h4>Egg</h4>
+                    <p>Price: ₱15</p>
                 </div>
-                <!-- Add more slides as needed -->
+                <div class="swiper-slide">
+                    <img src="./images/luncheonmeat.png" alt="Luncheon Meat" class="slide-in">
+                    <h4>Luncheon Meat</h4>
+                    <p>Price: ₱25</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/chickenmami.png" alt="Chicken Mami" class="slide-in">
+                    <h4>Chicken Mami</h4>
+                    <p>Price: ₱15</p>
+                </div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
     </section>
 
-    <section class="menu-slideshow">
-        <h2>Desserts</h2>
+    <section class="menu-slideshow" id="dessert">
+        <h2 class="fade-in sparkle">Desserts</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="IceCream.jpg" alt="Ice Cream">
-                    <p>Ice Cream</p>
+                    <img src="./images/IceCream.png" alt="Ice Cream" class="slide-in">
+                    <h4>Ice Cream</h4>
+                    <p>Price: ₱50</p>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
     </section>
-   
+
+    <section class="menu-slideshow" id="last">
+        <h2 class="fade-in sparkle" id="supplies">SCHOOL SUPPLIES AVAILABLE</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/bluebook.png" alt="Ice Cream" class="slide-in">
+                    <h4>Blue Book</h4>
+                    <p>Price: ₱6.00</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/indexcard.png" alt="Index Card" class="slide-in">
+                    <h4>Index Card (1/4 size)</h4>
+                    <p>Price: ₱4.00</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/ballpen.png" alt="Ballpen" class="slide-in">
+                    <h4>Ballpen</h4>
+                    <p>Price: ₱12.00</p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-content">
-            <p>Follow us on:</p>
-            <div class="social-icons">
-                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-            </div>
-            <h3>College of Science and Mathematics, UP Mindanao, Davao City</h3>
             <p>&copy; 2024 CSM Canteen. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
+        // Dark Mode Toggle
+        document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        // Initialize Swiper
         const swiper = new Swiper('.swiper-container', {
             loop: true,
-            autoplay: { delay: 3000 },
-            pagination: { el: '.swiper-pagination', clickable: true },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
         });
-        function goBack() {
-        window.history.back("index.html");
-    }   
-        // window.location.href = 'index.html';
-
+        function goToMainPage() {
+    // Redirect to another page, e.g., "learn-more.html"
+    window.location.href = "index.html";
+        }
+        function goToPage() {
+            window.location.href = "more.html";
+        }
     </script>
 </body>
 </html>
+ 
