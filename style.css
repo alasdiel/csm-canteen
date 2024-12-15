@@ -9,6 +9,14 @@
     font-size: 50px;
     color: #e0e0e0;
 }
+body, html{
+    width: 100%;
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
@@ -17,6 +25,9 @@ body {
 
 /* Header */
 header {
+    position:sticky;
+    top: 0;
+    z-index: 1000;
     background-color: #333;
     padding: 20px;
     color: #fff;
@@ -27,6 +38,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width:100%;
 }
 
 nav .logo h2 {
@@ -51,6 +63,29 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #890b0b;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction:row;
+        width: 100%;
+        display: none;
+    }
+
+    nav ul.show {
+        display:flex;
+    }
+
+    nav .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: #fff;
 }
 
 /* Home */
@@ -117,7 +152,7 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 12px;
     width: 90%;
-    height: 300px;
+    height: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;

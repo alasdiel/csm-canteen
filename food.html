@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSM Canteen - Food Menu</title>
+    <title>Canteen sa Kanluran Food Menu</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=restaurant" />
+    <script>
+        function toggleMenu() {
+            const navUl = document.querySelector('nav .menu-items');
+            navUl.classList.toggle('show');
+        }
+    </script>
 </head>
 <body>
     <div class="progress-bar" id="progress-bar"></div>
 
     <header>
         <nav>
+            <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
             <div class="logo">
                 <ul class="logo-title">
-                    <li class="material-icon"><span class="material-symbols-outlined">restaurant</span></li>
+                    <li class="material-icon"><span class="material-symbols-outlined" style="font-size: 50px;">restaurant</span></li>
                     <li><a href="index.html">Canteen<br>sa Kanluran</a></li>
                     <br>
                     <li></li>
@@ -25,9 +32,9 @@
             </div>
                 </ul> 
                 
-            <ul>
+            <ul class="menu-items">
                 <li><a href="#Mon">Monday Specials</a></li>
-                <li><a href="#TtoF">Tuesday to Friday</a></li>
+                <li><a href="#TtoF">Tues. to Fri.</a></li>
                 <li><a href="#everyday">Everyday Favorites</a></li>
                 <li><a href="#dessert">Desserts</a></li>
                 <li><a href="#supplies">School Supplies</a></li>

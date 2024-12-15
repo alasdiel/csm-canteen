@@ -5,8 +5,50 @@
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
     }
+    
+    .material-icon{
+        font-size: 100%;
+        color: #e0e0e0;
+    }
 
+    .material-symbols-outlined {
+        font-size: 50px;
+        color: #e0e0e0;
+    }
+
+    body {
+        line-height: 1.6;
+        background-color: #f9f9f9;
+        color: #333;
+        overflow-x: hidden;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Dark Mode */
+    body.dark-mode {
+        background-color: #121212;
+        color: #fff;
+    }
+
+    body, html{
+        width: 100%;
+        overflow-x: hidden;
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    /* Header */
     header {
+        position:sticky;
+        top: 0;
+        z-index: 1000;
         background-color: #333;
         padding: 20px;
         color: #fff;
@@ -17,6 +59,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width:100%;
     }
     
     nav .logo h2 {
@@ -43,63 +86,32 @@
         color: #890b0b;
     }
     
-    .material-icon{
-        font-size: 100%;
-        color: #e0e0e0;
+    @media (max-width: 768px) {
+        nav ul {
+            flex-direction:row;
+            width: 100%;
+            display: none;
+        }
+    
+        nav ul.show {
+            display:flex;
+        }
+    
+        nav .menu-toggle {
+            display: block;
+            cursor: pointer;
+        }
+        nav ul li a {
+            font-size: 0.8em;
+        }
     }
-
-    .material-icons-outlined {
-        font-size: 50px;
-        color: #e0e0e0;
-    }
-
-    body {
-        line-height: 1.6;
-        background-color: #f9f9f9;
-        color: #333;
-        overflow-x: hidden;
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    /* Dark Mode */
-    body.dark-mode {
-        background-color: #121212;
+    
+    .menu-toggle {
+        display: none;
+        font-size: 30px;
         color: #fff;
     }
-
-    /* Navbar */
-    .navbar {
-        display: flex;
-        justify-content: space-around;
-        padding: 15px 50px;
-        background: rgba(0, 0, 0, 0.8);
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        animation: slideDown 1s ease;
-    }
-
-    .navbar ul {
-        list-style: none;
-        display: flex;
-    }
-
-    .navbar ul li {
-        margin: 0 15px;
-    }
-
-    .navbar ul li a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: 600;
-        transition: color 0.3s ease, transform 0.3s ease;
-    }
-
-    .navbar ul li a:hover {
-        color: #fca311;
-        transform: scale(1.1);
-    }
-
+    
     /* Banner */
     .banner {
         height: 100vh;
