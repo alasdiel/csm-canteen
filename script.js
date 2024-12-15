@@ -1,10 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // Check if the user is registered
-    if (!sessionStorage.getItem('registered')) {
-        window.location.href = 'register.html';
-    }
-
     // Smooth Scroll for navigation links
     const links = document.querySelectorAll('nav ul li a');
     links.forEach(link => {
