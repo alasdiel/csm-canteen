@@ -14,7 +14,7 @@
     <header>
         <nav class="navbar">
             <ul>
-                <li><a onclick="goToPage()">Home</a></li>
+                <li><a onclick="goToMainPage()">Home</a></li>
                 <li><a href="#menu-slideshow" class="active">Food</a></li>
                 <li><a href="#last">Supplies</a></li>
             </ul>
@@ -243,10 +243,13 @@
                 clickable: true,
             },
         });
-        function goToPage() {
+        function goToMainPage() {
     // Redirect to another page, e.g., "learn-more.html"
     window.location.href = "index.html";
-}
+        }
+        function goToPage() {
+            window.location.href = "more.html";
+        }
     </script>
 </body>
 </html>

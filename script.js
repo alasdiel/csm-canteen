@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    // Check if the user is registered
+    if (!sessionStorage.getItem('registered')) {
+        window.location.href = 'register.html';
+    }
+
     // Smooth Scroll for navigation links
     const links = document.querySelectorAll('nav ul li a');
     links.forEach(link => {
@@ -7,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
-            
+
             // Scroll to target element
             targetElement.scrollIntoView({
                 behavior: 'smooth',
@@ -22,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const modalContent = `
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Book a Table</h2>
+            <h2>Clarify Availability of a Date</h2>
             <form id="bookingForm">
                 <input type="text" placeholder="Your Name" required />
                 <input type="email" placeholder="Your Email" required />
