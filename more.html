@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canteen sa Kanluran</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=restaurant" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,8 +13,8 @@
         <nav>
             <div class="logo">
                 <ul class="logo-title">
-                    <!-- <li class="material-icon"><span class="material-symbols-outlined">restaurant</span></li> -->
-                    <li><a href="index.html">Kanluran<br>Canteen</a></li>
+                    <li class="material-icon"><span class="material-symbols-outlined">restaurant</span></li>
+                    <li><a href="index.html">Canteen<br>sa Kanluran</a></li>
                     <br>
                     <li></li>
                     <li><p>College of Science and Mathematics</p><p><strong>UP Mindanao</strong></p></li>           
@@ -25,7 +26,6 @@
                 <li><a onclick="goToPage()">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#menu">Menu</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -33,34 +33,17 @@
     <section id="home">
         <div class="home-content">
             <img src="./images/UPMin.png" alt="Restaurant Logo">
-            <h1 id="glow">Enjoy Our Delicious Meal</h1>
+            <h1 id="glow">Enjoy Our Delicious Meals!</h1>
             <p>Your one-stop shop for food and essentials, mga isko at iska.</p>
-            <button onclick="window.location.href='#contact'">DATE INQUIRY</button>
+            <!-- <button onclick="window.location.href='#contact'">DATE INQUIRY</button> -->
         </div>
     </section>
 
-    <section id="about" class="animate-on-scroll">
-        <div>
-            <div class="card b1">
-                <h3>Head Chef</h3>
-                <p>The best cook to serve you the best.</p>
-                <img src="./images/chef.jpg" alt="Head Chef" class="hover-image">
-            </div>
-            <div class="card b1">
-                <h3>Quality Food</h3>
-                <p>Fresh ingredients, prepared daily.</p>
-                <img src="./images/quality-food.png" alt="Quality Food" class="hover-image"> <!-- missing .png -->
-            </div>
-            <div class="card b1">
-                <h3>Self-Service</h3>
-                <p>Order and Pay</p>
-                <img src="self-service.png" alt="Self-Service" class="hover-image"> <!-- missing .png -->
-            </div>
-            <div class="card b1">
-                <h3>Mondays to Fridays</h3>
-                <p style="font-size: small;">We're here for you anytime, through Mondays to Fridays.</p>
-                <img src="./images/chef.jpg" alt="Mondays to Fridays" class="hover-image">
-            </div>
+    <section id="about">
+        <div class="about-content">
+            <div>
+            <h2 class = "about-us">About Us</h2>
+            <p class="about-text">Canteen sa Kanluran is a canteen located at the College of Science and Mathematics, UP Mindanao. It offers a variety of food and supplies for the students and faculty of the college. </p>
         </div>
     </section>
     
@@ -89,11 +72,12 @@
             <a href="food.html" class="menu-button">OTHER MENU</a>
         </div>
     </section>
-
     <footer>
-        <p>&copy; 2024 Restoran | All Rights Reserved</p>
+        <div class="footer-content">
+            <h3>College of Science and Mathematics, UP Mindanao, Davao City</h3>
+            <p>&copy; 2024 CSM Canteen. All rights reserved.</p>
+        </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>

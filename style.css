@@ -3,8 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: red solid 1px; */
 }
-
+.material-symbols-outlined {
+    font-size: 50px;
+    color: #e0e0e0;
+}
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
@@ -91,7 +95,7 @@ nav ul li a:hover {
 /* About */
 #about {
     padding: 20px;
-    background-color: #890b0b;
+
     text-align: center;
     display: flex;
     align-items: center;
@@ -100,7 +104,44 @@ nav ul li a:hover {
     width: 100%;
 }
 
-#about .card {
+#about div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-content {
+    background-color: #8A1538;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px #FFB81C;
+
+}
+
+.about-us{
+    background-color: #00573F;
+    box-shadow: 2px 2px 3px #120101;
+    color: #f4f4f4;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 5px;
+}
+
+.about-text {
+    margin-top: 30px;
+    color: #f4f4f4;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+/* #about .card {
     display: inline-block;
     margin: 20px;
     padding: 20px;
@@ -109,57 +150,11 @@ nav ul li a:hover {
     border-radius: 12px;
     width: 200px;
     height: 200px; /* Fixed height to accommodate the image */
-    position: relative;
+    /* position: relative;
     overflow: hidden; /* Prevent overflow */
-    transition: transform 0.3s ease, z-index 0.3s ease;
-}
+    /* transition: transform 0.3s ease, z-index 0.3s ease;
+}  */
 
-.b1:hover {
-    transform: scale(2.0); /* Slightly enlarge the card */
-    z-index: 10;
-}
-
-/* Style for the hover image */
-.hover-image {
-    position: absolute;
-    bottom: -50px; /* Start below the card */
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 100px;
-    height: 100px;
-    opacity: 0;
-    transition: opacity 0.3s ease, bottom 0.3s ease;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Show image on hover */
-.b1:hover .hover-image {
-    bottom: 10px; /* Move into view */
-    opacity: 1;
-}
-
-/* Adjust text content inside card */
-#about .card h3,
-#about .card p {
-    transition: transform 0.3s ease;
-}
-
-#about .card h3{
-    color: #890b0b; 
-}
-
-/* Move text up slightly when hovered */
-.b1:hover h3,
-.b1:hover p {
-    transform: translateY(-20px);
-}
-
-
-/* #about .card h3 {
-    margin-bottom: 10px;
-    font-size: 1.5em;
-} */
 
 /* Menu */
 /* Menu Section */
@@ -281,12 +276,70 @@ nav ul li a:hover {
 }
 
 /* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
+    /* Footer Styles */
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 40px 0;
+        text-align: center;
+        position: relative;
+        margin-top: 50px;
+    }
+
+    footer .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    footer .footer-content p {
+        font-size: 1.1rem;
+
+    }
+
+    footer h3 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+        margin-top: 10px;
+        opacity: 0.7;
+    }
+
+    footer .footer-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(90deg, #890b0b, #fca311);
+        border-radius: 5px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        footer .footer-content {
+            padding: 20px;
+        }
+
+        footer h3 {
+            font-size: 1.2rem;
+        }
+
+        footer p {
+            font-size: 0.8rem;
+        }
+
+        .menu-card {
+            width: 100%;
+        }
+    }
 
 /* Scroll */
 html, body {

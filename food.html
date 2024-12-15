@@ -7,31 +7,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=restaurant" />
 </head>
 <body>
     <div class="progress-bar" id="progress-bar"></div>
 
     <header>
-        <nav class="navbar">
+        <nav>
+            <div class="logo">
+                <ul class="logo-title">
+                    <li class="material-icon"><span class="material-symbols-outlined">restaurant</span></li>
+                    <li><a href="index.html">Canteen<br>sa Kanluran</a></li>
+                    <br>
+                    <li></li>
+                    <li><p>College of Science and Mathematics</p><p><strong>UP Mindanao</strong></p></li>           
+                    <li></li>  
+            </div>
+                </ul> 
+                
             <ul>
-                <li><a onclick="goToMainPage()">Home</a></li>
-                <li><a href="#menu-slideshow" class="active">Food</a></li>
-                <li><a href="#last">Supplies</a></li>
+                <li><a href="#Mon">Monday Specials</a></li>
+                <li><a href="#TtoF">Tuesday to Friday</a></li>
+                <li><a href="#everyday">Everyday Favorites</a></li>
+                <li><a href="#dessert">Desserts</a></li>
+                <li><a href="#supplies">School Supplies</a></li>
             </ul>
-            <button class="button" id="dark-mode-toggle">Dark Mode</button>
         </nav>
     </header>
 
     <section class="banner">
         <div class="content">
-            <a class="logo"><img src="UPMin.png" alt="Logo"></a>
+            <a class="logo"><img src="./images/UPMin.png" alt="Logo"></a>
             <h1>Welcome to the CSM Canteen</h1>
             <p>Explore our weekly menu, designed to satisfy your cravings!</p>
             <button onclick="goToPage()" class="button">Go Back</button>
         </div>
     </section>
 
-    <section id="menu-slideshow">
+    <section id="menu-slideshow" id="Mon">
         <h2 class="fade-in sparkle">Monday Specials</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -95,7 +108,7 @@
         </div>
     </section>
 
-    <section class="menu-slideshow">
+    <section class="menu-slideshow" id="TtoF">
         <h2 class="fade-in sparkle">Tuesday to Friday</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -149,7 +162,7 @@
         </div>
     </section>
 
-    <section class="menu-slideshow">
+    <section class="menu-slideshow" id="everyday">
         <h2 class="fade-in sparkle">Everyday Favorites</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -178,7 +191,7 @@
         </div>
     </section>
 
-    <section class="menu-slideshow">
+    <section class="menu-slideshow" id="dessert">
         <h2 class="fade-in sparkle">Desserts</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -193,7 +206,7 @@
     </section>
 
     <section class="menu-slideshow" id="last">
-        <h2 class="fade-in sparkle">SCHOOL SUPPLIES AVAILABLE</h2>
+        <h2 class="fade-in sparkle" id="supplies">SCHOOL SUPPLIES AVAILABLE</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -218,12 +231,6 @@
 
     <footer>
         <div class="footer-content">
-            <h3>Follow Us</h3>
-            <div class="social-icons">
-                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-            </div>
             <p>&copy; 2024 CSM Canteen. All rights reserved.</p>
         </div>
     </footer>
